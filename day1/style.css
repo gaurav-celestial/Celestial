@@ -1,0 +1,147 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+/* TABLES */
+table,th,td{
+    border:1px solid black;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FLEXBOX */
+.flexbox{
+    margin-top: 50px;
+    padding: 25px;
+    background-color:wheat;
+    position: relative;
+    
+}
+
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px
+}
+
+.flex-item{
+    height: 300px;
+    background-color: rgba(211, 211, 211,0.8);
+    border: 3px solid black;
+}
+
+.flex-item1{
+    width: 100px;
+}
+
+.flex-item2{
+    width: 200px;
+}
+
+.flex-item3{
+    width: 300px;
+}
+
+.positioned-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100px;
+    width:100px;
+    background-color: brown;
+    border-radius: 100px;
+    /* top: 80px; */
+    bottom: 25px;
+    right:25px;
+    color: white;
+}
+
+.positioned-element2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 200px;
+    width:200px;
+    background-color: brown;
+    border-radius: 100px;
+    bottom: 25px;
+    left:50px;
+    color: white;
+    text-align: center;
+    transition: transform 1s ease-in-out;
+}
+
+
+.positioned-element2:hover{
+    background-color: blueviolet;
+    transform: scale(1.5)  rotate(20deg);
+}
+.positioned-element2:active{
+    background-color: aqua;
+}
+
+.psuedo-element{
+    margin: auto;
+    height: 200px;
+    width:200px;
+    background-color: brown;
+    display: flex;
+   
+}
+
+.psuedo-element::before{
+    content: '';
+    display: block;
+    background-color: white;
+    color: black;
+    height: 75px;
+    width: 75px;
+    /* margin: -10px; */
+    border-radius: 100px;
+}
+
+.practice-tags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.animation{
+    background-color: lightslategray;
+    height: 200px;
+    width: 1000px;
+    margin: 50px auto 0 auto;
+
+    
+}
+
+.ball{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 100px;
+    animation: ball 1.5s ease-in forwards infinite alternate;
+}
+
+.animation:hover .ball:last-child{
+    background-color: blue;
+}
+
+@keyframes ball{
+    100%{
+        transform: translate(900px);
+    }
+}
+

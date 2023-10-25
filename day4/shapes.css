@@ -1,0 +1,57 @@
+.circle {
+  border-radius: 1000px;
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
+  margin: 20px;
+}
+
+.circle::before {
+  content: "circle";
+  font-size: 20px;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  margin: 20px;
+}
+.square::before {
+  content: "square";
+  font-size: 20px;
+  color: white;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid black;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+
+.pentagon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 0;
+  border-top: 200px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+}
+
+.pentagon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -300px;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-bottom: 200px solid green;
+  border-right: 200px solid transparent;
+  border-left: 200px solid transparent;
+}
