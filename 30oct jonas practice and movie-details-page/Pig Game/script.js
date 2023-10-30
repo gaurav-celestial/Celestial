@@ -1,5 +1,7 @@
 "use strict";
 
+//ONGOING PROJECT
+
 // Selecting elements
 const btnHold = document.querySelector(".btn--hold");
 const btnRoll = document.querySelector(".btn--roll");
