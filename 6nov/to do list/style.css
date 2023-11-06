@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e3e9ff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.todo {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo h1 {
+  background-color: #af7eeb;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.todo-items {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.todo ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.todo-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-task-input {
+  width: 70%;
+  padding: 7px 10px;
+  border-radius: 50px;
+  border: black solid 1px;
+}
+
+.add-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  /* width: 20%; */
+  background-color: #af7eeb;
+  border: none;
+  padding: 10px;
+  border-radius: 100px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.delete,
+.unchecked {
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
