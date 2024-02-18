@@ -1,0 +1,31 @@
+.car-img {
+  width: 30%;
+}
+.glass-img {
+  width: 100%;
+  margin: 10px;
+}
+.about {
+  background-color: aquamarine;
+  padding: 200px;
+}
+.services {
+  background-color: turquoise;
+  margin: auto;
+}
+.portfolio {
+  background-color: #555;
+}
+
+.lazy-img {
+  filter: blur(20px);
+}
+
+.glass-img-con {
+  margin: auto;
+  width: 50%;
+}
+
+.highlight:last-child {
+  padding-bottom: 400px;
+}

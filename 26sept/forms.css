@@ -1,0 +1,45 @@
+body{
+    background-color:aliceblue
+}
+
+label{
+    display: block;
+}
+
+form{  
+    width: 20em;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.grid-container input,
+textarea {
+  padding: 0.4rem;
+  width: 100%;
+}
+.grid-container{
+   display: flex;
+   gap: 2rem;
+}
+
+.checkbox,.radio{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sub{
+    font-weight: bold;
+}
+
+.checkbox label, .radio label{
+    display: inline;
+}
+
+.file{
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 10px;
+}
